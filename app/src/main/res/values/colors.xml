@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#453A1B</color>
+    <color name="colorPrimaryDark">#453a1b</color>
+    <color name="colorAccent">#27836f</color>
+    <color name="colorBranca">#ffff</color>
+    <color name="AppBrown">#453a1b</color>
+</resources>

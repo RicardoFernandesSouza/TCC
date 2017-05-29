@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ricardofernandes.tohome.Login"
+    android:background="@color/AppBrown">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Usuário:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTituloUser"
+            android:layout_below="@+id/ivAppLogo"
+            android:layout_toLeftOf="@+id/ivAppLogo"
+            android:layout_toStartOf="@+id/ivAppLogo"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:text="Senha:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTituloPass"
+            android:layout_below="@+id/tvTituloUser"
+            android:layout_alignLeft="@+id/tvTituloUser"
+            android:layout_alignStart="@+id/tvTituloUser"
+            android:layout_marginTop="18dp"
+            android:textColor="@android:color/background_light" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/etUsername"
+            android:layout_alignBaseline="@+id/tvTituloUser"
+            android:layout_alignBottom="@+id/tvTituloUser"
+            android:layout_toRightOf="@+id/tvTituloUser"
+            android:layout_toEndOf="@+id/tvTituloUser"
+            android:textColor="@android:color/white"
+            android:elevation="11dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etPassword"
+            android:layout_below="@+id/etUsername"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:elevation="10dp" />
+
+        <Button
+            android:text="Entrar"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEntrar"
+            android:layout_below="@+id/etPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@color/AppBrown"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/background_light"
+            android:elevation="10dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/logo_v_2_0"
+            android:layout_marginTop="68dp"
+            android:id="@+id/ivAppLogo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
